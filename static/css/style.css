@@ -1,0 +1,53 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: gray;
+}
+
+footer {
+    color: white;
+}
+
+.filters {
+    color: black;
+}
+
+.panel-heading h5 {
+    color: black;
+}
+
+#main-title {
+    position: relative;
+    background-color: black;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+  }
+
+#main-title h1, h4 {
+    color: turquoise;
+}
+
+#table-area {
+    background-color: gainsboro;
+}
+
+#table-area td, th {
+    font-size: 0.85em;
+}
+
+#ufo-table {
+    color: black;
+}
+
+#no-data h3 {
+    color: lightsalmon;
+    background-color: maroon;
+    text-align: center;
+}
+
+.filter {
+    background-color: lightgray;
+}

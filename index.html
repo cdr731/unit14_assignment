@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFO Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/spacelab/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="static/images/ufo1.png" class="img-fluid" alt="Responsive image">
+        <div id="main-title" class="text-center">
+          <h1>UFO Finder</h1>
+          <h4>Brought to you by 'Aliens-R-Real'</h4>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <aside class="filters">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h5>Filter Search</h5></div>
+            <div class="panel-body">
+              <form>
+                <div class="form-group">
+                  <ul class="list-group" id="filters">
+                    <li class="filter list-group-item">
+                      <label for="date">Enter a Date</label>
+                      <input class="form-control" id="datetime" type="text" placeholder="">
+                    </li>
+                  </ul>
+                </div>
+                <button id="filter-btn" type="submit" class="btn btn-info">Filter Table</button>
+              </form>
+            </div>
+          </div>
+        </aside>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="table-area" class="">
+          <table id="ufo-table" class="table table-striped table-responsive">
+            <thead class="thead-dark">
+              <tr>
+                <th class="table-head">Date</th>
+                <th class="table-head">City</th>
+                <th class="table-head">State</th>
+                <th class="table-head">Country</th>
+                <th class="table-head">Shape</th>
+                <th class="table-head">Duration</th>
+                <th class="table-head">Comments</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div id="no-data" class=""></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">UFO Sightings -> Output Complete!</span>
+    </footer>
+  </div>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+
+</html>
