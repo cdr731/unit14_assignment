@@ -1,9 +1,12 @@
+/* Unit 14 Assignment - JavaScript and DOM Manipulation
+   by Christopher Reutz */
+
 * {
     font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: gray;
+    background-color: slategray;
 }
 
 footer {
@@ -30,16 +33,23 @@ footer {
     color: turquoise;
 }
 
-#table-area {
-    background-color: gainsboro;
+.table h4 {
+    color: maroon;
 }
 
-#table-area td, th {
-    font-size: 0.85em;
-}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: lightgray;
+ }
+
+ .table-striped>tbody>tr:nth-child(even)>td, 
+ .table-striped>tbody>tr:nth-child(even)>th {
+    background-color: darkgray;
+  }
 
 #ufo-table {
     color: black;
+    font-size: 0.85em;
 }
 
 #no-data h3 {

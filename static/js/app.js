@@ -21,8 +21,6 @@ function deleteTbody() {
   d3.select("tbody")
     .selectAll("tr").remove()
     .selectAll("td").remove();
-  d3.select("#no-data")
-    .select("h3").remove();
 };
 
 // initial display of all UFO sightings
@@ -49,9 +47,11 @@ button.on("click", function(event) {
 
   // display message if no records found
   if (filteredData.length == 0) {
-    d3.select("#no-data")
-      .append("h3")
-      .html("No records found");
+    d3.select("tbody")
+      .append("tr")
+      .append("td")
+        .attr("colspan", 7)
+        .html("<h4>No Records Found</h4>");
   };
 
   console.log(filteredData);
